@@ -3,16 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <title>Travel Recommendation</title>
+  <style>
+    nav ul {
+      padding: 0;
+      margin: 0;
+      display: flex;            
+      align-items: center;
+      justify-content: center;
+      gap: 10px;                
+    }
+
+    nav li {
+      display: inline;          
+    }
+
+    nav a {
+      text-decoration: none;    
+      color: black;             
+    }
+
+    nav {
+      background-color: #f0f0f0;
+      padding: 10px;
+    }
+  </style>
 </head>
 <body>
     <nav>
-        <h1>Travel Recommendation</h1>
         <ul>
-          <li><a href="./travel_recommendation.html" id="home">Home </a></li>
-          <li><a href="./contact_us.html" id="contact">Contact Us </a></li>
-          <li><a href="./about_us.html" id="about_us">About Us </a></li>
+            <li><a href="./travel_recommendation.html" id="home">Home </a></li>
+            <li><a href="./contact_us.html" id="contact">Contact Us </a></li>
+            <li><a href="./about_us.html" id="about_us">About Us </a></li>
         </ul>
     </nav>
    <h1>Contact Us</h1>
+   <input type="text" id="nameInput" placeholder="Name">
+   <input type="text" id="emailInput" placeholder="Email">
+   <input type="text" id="messageInput" placeholder="Message">
+   <button id='btnSubmit'>Submit</button>
 </body>
 </html>
